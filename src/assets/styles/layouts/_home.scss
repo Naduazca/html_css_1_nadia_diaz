@@ -1,0 +1,398 @@
+@use "../base/variables" as *;
+@use "../base/typography" as *;
+@use "../objects/objects" as *;
+@use "../base/functions" as *;
+@use "../base/mixins" as *;
+
+body {
+  @include text-style($font-family-primary, $font-weight-regular, $font-style-normal, 1rem, 1.6, $color-dark);
+  background-color: #ffe4fe;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  @include text-style($font-title, $font-weight-regular, $font-style-normal, 2rem, 1.2, $color-dark);
+}
+
+.itinerario__image {
+  border-radius: 12px;
+  width: 100%;
+}
+
+/*__________________________________________________________________________
+  ----------------------------- VERSION MOBILE ----------------------------
+____________________________________________________________________________*/
+@media screen and (max-width: $bp-small) {
+
+  /*----------------------HEADER MOBILE----------------*/
+  .header {
+    background-color: $color-accent;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    /*------------------LOGO MOBILE------------------- */
+    .header__logo-img {
+      margin-left: 0px;
+      width: 25%;
+    }
+  }
+
+  /*-----------------NAVEGACION MOBILE-----------------*/
+  .header__nav {
+    gap: 1rem;
+  }
+
+  .header__link {
+    font-size: 0.75rem;
+  }
+
+  /*----------- HERO MOBILE-------------- */
+  .hero {
+    min-height: 40vh;
+  }
+
+  .hero__subtitle {
+    font-size: responsive-font(1.2rem);
+  }
+
+  .hero__title {
+    font-size: responsive-font(4rem);
+  }
+
+  /*----------------------------INTRO MOBILE -------------------------*/
+  .intro__text {
+    font-size: 0.6rem;
+  }
+
+  /*------------------------ ITINERARIO MOBILE-------------------------*/
+  .itinerario__title {
+    font-size: 1rem;
+    margin-bottom: 1%;
+  }
+
+  .itinerario__row {
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+
+  .itinerario__row--two-columns {
+    flex-direction: column;
+  }
+
+  .itinerario__row--image-first {
+    flex-direction: column-reverse;
+  }
+
+  .itinerario__image {
+    width: 100%;
+  }
+
+  .itinerario__text {
+    font-size: 0.6rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .itinerario__rights {
+    font-size: 0.4rem;
+  }
+
+  .main-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* -----------------------FOOTER MOBILE--------------------*/
+  .footer {
+    .footer__title {
+      font-size: 0.8rem;
+    }
+
+    .footer__description {
+      font-size: 0.6rem;
+    }
+
+    .footer__bottom {
+      margin-top: 0.5rem;
+      font-size: 0.4rem;
+    }
+  }
+}
+
+/*__________________________________________________________________________
+----------------------------- VERSION TABLET ----------------------------
+____________________________________________________________________________*/
+
+@media screen and (min-width: $bp-small) and (max-width: $bp-medium) {
+
+  /*-----------------------HEADER TABLET--------------------------*/
+  .header {
+    background-color: $color-accent;
+    padding: 1rem;
+
+    .header__container {
+      padding: 18px 24px;
+    }
+
+    /*----------------------LOGO TABLET----------------------- */
+    .header__logo-img {
+      margin-left: 0px;
+      width: 40%;
+    }
+
+    /*---------------------NAVEGACION TABLET-----------------*/
+    .header__nav {
+      gap: 1rem;
+    }
+
+    .header__link {
+      font-size: 0.95rem;
+    }
+  }
+
+  /*------------------------HERO TABLET-------------------------- */
+  .hero {
+    min-height: 40vh;
+  }
+
+  .hero__subtitle {
+    padding-right: 20%;
+    font-size: responsive-font(1.2rem, 1.1);
+  }
+
+  .hero__title {
+    font-size: responsive-font(4rem, 1.5);
+  }
+
+  /*-----------------------INTRO TABLET-------------------------*/
+  .intro__text {
+    font-size: 0.8rem;
+  }
+
+  /*-----------------------ITINERARIO TABLET-------------*/
+  .itinerario__title {
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+  }
+
+  .itinerario__row {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5%;
+  }
+
+  .itinerario__row--two-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+
+    .itinerario__column {
+      width: 50%;
+    }
+
+    .itinerario__image {
+      width: 45%;
+    }
+
+    &.itinerario__row--image-first {
+      flex-direction: row-reverse;
+    }
+
+    .itinerario__text {
+      font-size: 0.8rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .itinerario__content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .itinerario__rights {
+    font-size: 0.6rem;
+  }
+
+  .main-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* --------------------FOOTER TABLET---------------------- */
+  .footer {
+    .footer__title {
+      font-size: 1.2rem;
+    }
+
+    .footer__description {
+      font-size: 0.9rem;
+    }
+
+    .footer__bottom {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+/*__________________________________________________________________________
+----------------------------- VERSION DESKTOP ----------------------------
+____________________________________________________________________________*/
+@media screen and (min-width: $bp-large) {
+
+  /*--------------------HEADER DESKTOP-------------------------*/
+  .header {
+    width: 100%;
+    background-color: $color-accent;
+  }
+
+  .header__container {
+    padding: 18px 24px;
+  }
+
+  /*---------------------LOGO DESKTOP-------------------*/
+  .header__logo-img {
+    margin-left: 0px;
+    width: 40%;
+  }
+
+  /*--------------------NAVEGACION DESKTOP----------------*/
+  .header__nav {
+    gap: 20px;
+  }
+
+  .header__link {
+    font-size: 0.95rem;
+  }
+
+  /*-----------------------------HERO DESKTOP-------------------------*/
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero__title {
+    font-size: responsive-font(2rem, 2);
+    line-height: 0.9;
+  }
+
+  .hero__subtitle {
+    padding-left: 30%;
+    padding-right: 20%;
+    font-size: responsive-font(1.2rem, 1.5);
+  }
+
+  /*------------------INTRO DESKTOP-------------------------*/
+  .intro__text {
+    font-size: 1rem;
+  }
+
+
+
+  /*--------------------ITINERARIO DESKTOP--------------------*/
+  .itinerario__title {
+    font-size: 2rem;
+    margin-bottom: 4%;
+  }
+
+  .itinerario__title--special {
+    margin-top: 20%;
+  }
+
+  .itinerario__row {
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+  }
+
+  .itinerario-item {
+    margin-top: 10%;
+    display: flex;
+  }
+
+  .itinerario__row--two-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: stretch;
+
+    .itinerario__column {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .itinerario__image {
+      width: 45%;
+      object-fit: cover;
+    }
+
+    .itinerario__column--with-rights {
+      justify-content: space-between;
+    }
+
+    .itinerario__text {
+      margin: 0;
+    }
+
+    .itinerario__content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .itinerario__rights {
+      margin: 0;
+    }
+
+    &.itinerario__row--image-first {
+      flex-direction: row-reverse;
+    }
+  }
+
+  /*----------------FOOTER DESKTOP-----------------------*/
+  .footer {
+    .footer__title {
+      font-size: 1.4rem;
+    }
+
+    .footer__description {
+      font-size: 1rem;
+    }
+
+    .footer__bottom {
+      margin-top: 18px;
+      font-size: 1rem;
+    }
+
+    .footer__nombre {
+      margin: 0;
+    }
+
+    .footer__brand {
+      display: flex; // coloca los hijos (img + p) en fila
+      align-items: center;
+      justify-content: center; // centra horizontalmente el conjunto
+      text-align: left;
+
+      .footer__logo {
+        width: 60px;
+        height: auto;
+        margin-right: 5%;
+      }
+
+      .footer__description {
+        font-size: 1rem;
+        max-width: 60%;
+        margin: 0;
+      }
+    }
+  }
+}

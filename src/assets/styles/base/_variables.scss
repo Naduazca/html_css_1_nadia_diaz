@@ -1,0 +1,23 @@
+@use "sass:color";
+
+// COLORS
+$color-primary: #edd1cf;
+$color-dark: #222;
+$color-accent: #DF6C6C;
+
+// TYPOGRAPHY
+//familia tipográfica
+$font-title: 'Instrument Serif', serif;
+$font-family-primary: 'KoHo', sans-serif;
+//weight de la tipografía
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+//estilo de tipografía
+$font-style-normal: normal;
+$font-style-italic: italic;
+
+// BREAKPOINTS
+$bp-small: 480px;//max-width mobile
+$bp-medium: 1023px;//max-width tablet
+$bp-large: 1024px;//min-width desktop
+

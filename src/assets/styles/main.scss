@@ -1,0 +1,22 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ * Import variables first (without namespace to make them global)
+ */
+
+/**
+ * Import other base files with namespaces to avoid conflicts
+ */
+
+/**
+ * Import objects and layouts
+ */
+@use "objects/objects" as *;
+@use "layouts/home" as *;
+
+/**
+ * Import Font Awesome
+ */

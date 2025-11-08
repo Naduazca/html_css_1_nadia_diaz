@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Itinerario de un viaje a París - experiencia personal y recomendaciones.">
-  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  <link rel="stylesheet" type="text/css" href="./src/assets/styles/main.scss">
   <title>PEC1. NADIA DIAZ CANO - Paris</title>
-  <link rel="icon" href="./assets/images/logo.png" type="image/png">
+  <link rel="icon" href="./src/assets/images/logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;600&display=swap" rel="stylesheet">
@@ -16,10 +16,10 @@
 </head>
 
 <body>
- <header class="header">
+  <header class="header">
     <div class="header__container flex flex--between flex--center container--margin">
       <a href="#" class="header__logo">
-        <img src="./assets/images/logo.png" alt="Logo de la web" class="header__logo-img block">
+        <img src="./src/assets/images/logo.png" alt="Logo de la web" class="header__logo-img block">
       </a>
       <nav class="header__nav flex flex--center">
         <ul class="header__menu">
@@ -33,20 +33,26 @@
   <main>
     <section class="hero flex flex--center">
       <div class="hero__content">
-        <h1 class="hero__title">PARÍS</h1>
-        <h2 class="hero__subtitle">Una escapada que enamora <i class="fa-solid fa-heart"> </i></h2>
+        <h1 class="hero__title">Paris</h1>
+        <h2 class="hero__subtitle"> Viajes que enamoran</h2>
       </div>
-</section>
+    </section>
 
     <section class="intro">
+      <div id="fecha-container">Fecha: <span id="fecha"></span></div>
       <p class="intro__text">
-        <i class="fa-solid fa-plane"></i>Siempre había soñado con conocer París, y por fin pude hacerlo en un viaje de tres días que superó todas mis
-        expectativas.
-        Cada rincón tiene su encanto, su historia y esa magia que solo la “Ciudad de la Luz” puede ofrecer.
-        Aquí te cuento mi itinerario, con los lugares que más me fascinaron y que te recomiendo totalmente si estás
-        planeando tu visita.
+        Descubre destinos únicos a través de experiencias personales y lugares inolvidables.
+        Cada viaje cuenta una historia, ¿cuál será la tuya?
       </p>
     </section>
+    <nav class="nav">
+      <ul class="nav__lista">
+        <li class="nav__item"><a href="./categoria/index.html" class="nav__link">Itinerario</a></li>
+        <li><a href="./links/index.html">Fuentes y atribuciones</a></li>
+      </ul>
+    </nav>
+
+
     <section class="itinerario">
       <div class="itinerario__item">
         <h3 class="itinerario__title">Primeras vistas desde Montmartre</h3>
@@ -71,7 +77,7 @@
               una de las avenidas más elegantes del mundo.
             </p>
           </div>
-          <img src="./assets/images/paris2.jpg" alt="arc de triomf" class="itinerario__image">
+          <img src="./src/assets/images/paris2.jpg" alt="arc de triomf" class="itinerario__image">
         </div>
       </div>
       <div class="itinerario__item">
@@ -85,7 +91,7 @@
               donde se encuentran algunas de las obras más hermosas de Claude Monet.
             </p>
           </div>
-          <img src="./assets/images/paris3.jpg" alt="museo claude monet" class="itinerario__image block">
+          <img src="./src/assets/images/paris3.jpg" alt="museo claude monet" class="itinerario__image block">
         </div>
         <p class="itinerario__text">
           Después, continué al Musée d’Orsay, que tiene entrada gratuita para jóvenes de 18 a 25 años. El edificio, una
@@ -116,12 +122,12 @@
               delante mientras escuchaba a un artista callejero tocar La vie en rose en acordeón.
             </p>
           </div>
-          <img src="./assets/images/paris4.jpg" alt="pasillo del museo Louvre" class="itinerario__image block">
+          <img src="./src/assets/images/paris4.jpg" alt="pasillo del museo Louvre" class="itinerario__image block">
         </div>
       </div>
       <div class="itinerario__item">
         <div class="itinerario__row itinerario__row--two-columns itinerario__row--image-left block">
-          <img src="./assets/images/paris5.jpg" alt="notre dame" class="itinerario__image block">
+          <img src="./src/assets/images/paris5.jpg" alt="notre dame" class="itinerario__image block">
           <div class="itinerario__column">
             <p class="itinerario__text">
               Finalmente, terminé el día en el Centro Pompidou, un espacio dedicado al arte moderno y contemporáneo. Su
@@ -134,44 +140,46 @@
 
 
       <div class="itinerario__item">
-  
+
         <div class="itinerario__row--column itinerario__row--two-columns itinerario__row--image-right flex block">
-            <div class="itinerario__column itinerario__column--with-rights">
-              <h3 class="itinerario__title--special">P.D.: ¡No os vayáis sin probar los macarons! </h3>
-              <div class="itinerario__content">
-                
-                <p class="itinerario__text">
-                  Son el dulce perfecto para acompañar un paseo parisino — crujientes por fuera, suaves por dentro y con mil
-                  sabores que te harán volver por más.
-                </p>
-              </div>
-              <p class="itinerario__rights">
-                © 2025 Nadia Diaz Cano. Todas las fotografías y contenidos son de autoría propia. Queda prohibida su
-                reproducción sin permiso.
+          <div class="itinerario__column itinerario__column--with-rights">
+            <h3 class="itinerario__title--special">P.D.: ¡No os vayáis sin probar los macarons! </h3>
+            <div class="itinerario__content">
+
+              <p class="itinerario__text">
+                Son el dulce perfecto para acompañar un paseo parisino — crujientes por fuera, suaves por dentro y con
+                mil
+                sabores que te harán volver por más.
               </p>
             </div>
-          <img src="./assets/images/paris6.jpg" alt="macarons" class="itinerario__image block">
+            <p class="itinerario__rights">
+              © 2025 Nadia Diaz Cano. Todas las fotografías y contenidos son de autoría propia. Queda prohibida su
+              reproducción sin permiso.
+            </p>
+          </div>
+          <img src="./src/assets/images/paris6.jpg" alt="macarons" class="itinerario__image block">
         </div>
       </div>
     </section>
   </main>
   <footer class="footer flex flex--center">
-  <div class="footer__top flex">
-    <h4 class="footer__title">HTML I CSS II - PEC 1</h4>
-  </div>
-  <div class="footer__brand flex flex--center">
-    <img src="./assets/images/logo_fondo.png" alt="Logo de la PEC1 Nadia con fondo" class="footer__logo">
-    <p class="footer__description">
-      Todas las fotos y experiencias compartidas en esta web son personales.
-      Trabajo realizado para la asignatura HTML Y CSS II del Máster de Desarrollo de Sitios y Aplicaciones Web impartido
-      por la UOC.
-    </p>
-  </div>
-  <div class="footer__bottom">
-    <p class="footer__nombre">&copy; 2025 Nadia Diaz Cano</p>
-  </div>
-</footer>
-  <script type="module" src="./assets/scripts/main.js"></script>
+    <div class="footer__top flex">
+      <h4 class="footer__title">HTML I CSS I - PEC 1</h4>
+    </div>
+    <div class="footer__brand flex flex--center">
+      <img src="./src/assets/images/logo_fondo.png" alt="Logo de la PEC1 Nadia con fondo" class="footer__logo">
+      <p class="footer__description">
+        Todas las fotos y experiencias compartidas en esta web son personales.
+        Trabajo realizado para la asignatura HTML Y CSS I del Máster de Desarrollo de Sitios y Aplicaciones Web
+        impartido
+        por la UOC.
+      </p>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__nombre">&copy; 2025 Nadia Diaz Cano</p>
+    </div>
+  </footer>
+  <script type="module" src="./src/index.js"></script>
 </body>
 
 </html>

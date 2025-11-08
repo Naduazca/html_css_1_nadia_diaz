@@ -1,0 +1,29 @@
+@use "../base/variables" as *;
+
+.heading {
+  font-family: $font-title;
+  font-weight: $font-weight-semibold;
+  line-height: 1.2;
+
+  &--large {
+    font-size: clamp(2rem, 5vw, 4rem);//el clamp es para que la tipografía sea responsive
+  }
+
+  &--medium {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+  }
+}
+
+.text {
+  font-family: $font-family-primary;
+  font-weight: $font-weight-regular;
+  line-height: 1.6;
+
+  &--small {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+  }
+
+  &--italic {
+    font-style: italic;
+  }
+}
