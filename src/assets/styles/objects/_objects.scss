@@ -34,13 +34,6 @@
     text-decoration: underline;
 }
 
-.header__link {
-    color: #000000;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 6px 8px;
-    border-radius: 6px;
-}
 
 /*---------------- Object styles hero-------------- */
 
@@ -55,6 +48,40 @@
     background-repeat: no-repeat;
 }
 
+.hero1 {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    justify-content: end;
+    color: #222;
+    background-image: url("../../assets/images/paris7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero2 {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    justify-content: end;
+    color: #222;
+    background-image: url("../../assets/images/paris10.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero3 {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    justify-content: end;
+    color: #222;
+    background-image: url("../../assets/images/paris13.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .hero::before {
     /*  overlay rosa del diseño */
     content: "";
@@ -63,7 +90,31 @@
     background: rgba(223, 108, 108, 0.25);
     pointer-events: none;
 }
+.hero1::before {
+    /*  overlay rosa del diseño */
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(223, 108, 108, 0.25);
+    pointer-events: none;
+}
+.hero2::before {
+    /*  overlay rosa del diseño */
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(223, 108, 108, 0.25);
+    pointer-events: none;
+}
 
+.hero3::before {
+    /*  overlay rosa del diseño */
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(223, 108, 108, 0.25);
+    pointer-events: none;
+}
 .hero__content {
     position: relative;
     padding: 2rem;
@@ -72,19 +123,34 @@
 }
 
 .hero__title {
-    font-family: $font-title;
-    font-weight: $font-weight-regular;
+    @include text-style($font-title, $font-weight-regular, $font-style-normal, 5rem, 1.6, #111);
     margin: 0;
-    color: #111;
     line-height: 0.6;
 }
-
+.hero__content--detalle {
+    position: relative;
+    width: 90%;
+    margin-right: 5%;
+}
+.hero__title--detalle {
+    margin: 0;
+    line-height: 0.9;
+    font-size: responsive-font(3rem);
+    max-width: fit-content;
+    font-style: $font-title ;
+    color: #ffffff;
+}
+.hero__content--attributions {
+    position: relative;
+    max-width: 70%;
+    width: 100%;
+}
+.hero__title--attributions{
+    @include text-style($font-title, $font-weight-regular, $font-style-normal, 5rem, 1.6, #ffffff);
+}
 .hero__subtitle {
-    font-family: $font-family-primary;
-    font-weight: $font-weight-regular;
-    font-style: $font-style-italic;
+     @include text-style($font-family-primary, $font-weight-regular, $font-style-italic, 5rem, 1.6, #111);
     margin-top: 10px;
-    color: #222;
     text-align: end;
     line-height: 0.9;
 }
@@ -132,6 +198,7 @@
     font-style: $font-style-italic;
     font-size: smaller;
 }
+
 /*--------------------Tarjeta styles-----------------------------*/
 /* Cada tarjeta */
 .tarjetas{
@@ -155,7 +222,7 @@
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-/* Imagen */
+/*-----------imagen --------*/
 .tarjeta__image {
   width: 100%;
   height: 200px;
@@ -163,8 +230,25 @@
   display: block;
 }
 .tarjeta__text{
+    display: none;
     padding-left: 1rem;
     font-style: $font-style-normal;
+}
+/*------Botón leer mas para interactividad javascript------------ */
+.leer-mas {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1% 2%;
+  color: #DF6C6C;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.leer-mas:hover {
+  background-color: transparent;
+  color: #000000;
 }
 .tarjeta__title{
     padding-left: 1rem;
@@ -288,3 +372,17 @@
   .nav__lista a:hover {
     background-color: #edd1cf;
   }
+
+  .attributions {
+  list-style: none;    
+  text-align: left;      
+  padding-top: 2%;        
+  padding-bottom: 2%;  
+  margin: 0 auto;        
+  display: block;          
+  width: fit-content;    
+}
+
+.attributions__element {
+  margin: 0.3em 0;         
+}

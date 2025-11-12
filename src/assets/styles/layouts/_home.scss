@@ -27,13 +27,17 @@ h3 {
   ----------------------------- VERSION MOBILE ----------------------------
 ____________________________________________________________________________*/
 @media screen and (max-width: $bp-small) {
-
+body{
+  overflow-x: hidden;
+  width: 100%;
+}
   /*----------------------HEADER MOBILE----------------*/
   .header {
     background-color: $color-accent;
     padding-left: 1rem;
     padding-right: 1rem;
-
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     /*------------------LOGO MOBILE------------------- */
     .header__logo-img {
       margin-left: 0px;
@@ -41,18 +45,10 @@ ____________________________________________________________________________*/
     }
   }
 
-  /*-----------------NAVEGACION MOBILE-----------------*/
-  .header__nav {
-    gap: 1rem;
-  }
-
-  .header__link {
-    font-size: 0.75rem;
-  }
-
   /*----------- HERO MOBILE-------------- */
   .hero {
     min-height: 40vh;
+    width: 100%;
   }
 
   .hero__subtitle {
@@ -60,9 +56,22 @@ ____________________________________________________________________________*/
   }
 
   .hero__title {
-    font-size: responsive-font(4rem);
+    font-size: responsive-font(3rem);
+    max-width: fit-content;
   }
-
+    .hero__title--detalle {
+    font-size: responsive-font(3rem);
+    max-width: fit-content;
+  }
+.hero__title--attributions{
+    font-size: responsive-font(3rem);
+}
+.hero3{
+  height: 30%;
+}
+.attributions{
+  margin:1em;
+}
   /*----------------------------INTRO MOBILE -------------------------*/
   .intro__text {
     font-size: 0.6rem;
@@ -142,15 +151,6 @@ ____________________________________________________________________________*/
     .header__logo-img {
       margin-left: 0px;
       width: 40%;
-    }
-
-    /*---------------------NAVEGACION TABLET-----------------*/
-    .header__nav {
-      gap: 1rem;
-    }
-
-    .header__link {
-      font-size: 0.95rem;
     }
   }
 
@@ -263,14 +263,6 @@ ____________________________________________________________________________*/
     width: 40%;
   }
 
-  /*--------------------NAVEGACION DESKTOP----------------*/
-  .header__nav {
-    gap: 20px;
-  }
-
-  .header__link {
-    font-size: 0.95rem;
-  }
 
   /*-----------------------------HERO DESKTOP-------------------------*/
   .hero {
@@ -278,7 +270,7 @@ ____________________________________________________________________________*/
   }
 
   .hero__title {
-    font-size: responsive-font(2rem, 2);
+    font-size: responsive-font(3rem, 2);
     line-height: 0.9;
   }
 
@@ -299,10 +291,6 @@ ____________________________________________________________________________*/
   .itinerario__title {
     font-size: 2rem;
     margin-bottom: 4%;
-  }
-
-  .itinerario__title--special {
-    margin-top: 20%;
   }
 
   .itinerario__row {
@@ -334,10 +322,6 @@ ____________________________________________________________________________*/
       object-fit: cover;
     }
 
-    .itinerario__column--with-rights {
-      justify-content: space-between;
-    }
-
     .itinerario__text {
       margin: 0;
     }
@@ -348,23 +332,31 @@ ____________________________________________________________________________*/
       align-items: center;
     }
 
-    .itinerario__rights {
-      margin: 0;
-    }
-
     &.itinerario__row--image-first {
       flex-direction: row-reverse;
     }
   }
 
+  .video-responsive {
+    width: 100%;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  margin-bottom: 2rem;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
   /*----------------FOOTER DESKTOP-----------------------*/
   .footer {
     .footer__title {
       font-size: 1.4rem;
-    }
-
-    .footer__description {
-      font-size: 1rem;
     }
 
     .footer__bottom {
