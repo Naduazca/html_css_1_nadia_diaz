@@ -4,10 +4,10 @@
   "description": "",
   "scripts": {
     "dev": "parcel serve index.html -p 8123",
-    "build": "parcel build index.html --target web --no-source-maps --no-cache",
+    "parcel:build": "parcel build index.html --target web --no-source-maps --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist .parcel-cache",
-    "build": "npm-run-all clean stylelint parcel:build"
+   "build": "npm-run-all clean stylelint parcel:build"
   },
   "keywords": [],
   "author": "",
