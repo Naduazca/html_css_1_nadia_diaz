@@ -6,7 +6,8 @@
     "dev": "parcel serve index.html -p 8123",
     "build": "parcel build index.html --target web --no-source-maps --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf dist .parcel-cache"
+    "clean": "rimraf dist .parcel-cache",
+    "build": "npm-run-all clean stylelint parcel:build"
   },
   "keywords": [],
   "author": "",
@@ -14,8 +15,8 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.0",
     "posthtml-include": "^2.0.1",
-    "sass": "^1.93.3",
-    "build": "npm-run-all clean stylelint parcel:build"
+    "sass": "^1.93.3"
+
   },
   "dependencies": {
     "date-fns": "^4.1.0"
