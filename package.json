@@ -4,10 +4,10 @@
   "description": "",
   "scripts": {
     "parcel:serve": "parcel -p 8123 --target web",
-    "parcel:build": "parcel build --target web --no-source-maps --no-cache",
+    "parcel:build": "parcel build index.html --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean stylelint parcel:build",
+    "build":"npm-run-all clean parcel:build",
     "stylelint": "stylelint src/assets/styles//*.scss",
     "stylelint:fix": "stylelint src/assets/styles//.scss --fix",
     "lint:css": "stylelint \"src/assets/styles/**/*.scss\" --allow-empty-input"
