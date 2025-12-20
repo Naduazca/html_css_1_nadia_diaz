@@ -42,7 +42,8 @@
       <div class="itinerario__item">
         <h2 class="itinerario__title">Entre museos y arte clásico</h2>
         <div class="itinerario__row itinerario__row--two-columns itinerario__row--column">
-          <img src="../src/assets/images/paris4.jpg" alt="Pasillo del Museo del Louvre en París" class="itinerario__image block">
+          <img src="../src/assets/images/paris4.jpg" alt="Pasillo del Museo del Louvre en París"
+            class="itinerario__image block">
           <p class="itinerario__text">Comencé el día en el Museo del Louvre, que es gratuito para los menores de 26 años
             residentes en la UE. No hay
             nada como perderse entre sus salas y encontrarse frente a la Mona Lisa o la Venus de Milo. Cada rincón es
@@ -57,19 +58,24 @@
         <h2 class="itinerario__title">Magia de luz y literatura</h2>
         <div class="itinerario__row itinerario__row--two-columns itinerario__row--column">
           <img src="../src/assets/images/paris8.jpg" alt="Vidrieras de la Sainte-Chapelle"
-            class="itinerario__image block">
+            class="itinerario__image block" loading="lazy">
+
           <img src="../src/assets/images/paris5.jpg" alt="Notre Dame de París visto de frente"
             class="itinerario__image block">
         </div>
-        <p class="itinerario__text">A las 14:30 tenía mi entrada para <cite>la Sainte-Chapelle</cite>, una joya gótica con vidrieras
+        <p class="itinerario__text">A las 14:30 tenía mi entrada para <cite>la Sainte-Chapelle</cite>, una joya gótica
+          con vidrieras
           que te dejan sin aliento.
           Su luz interior es casi mágica, sobre todo si entras cuando el sol atraviesa los vitrales. Después, hice una
-          parada en la librería <i lang="en">Shakespeare and Company</i>, un rincón mítico para los amantes de los libros, justo frente a
+          parada en la librería <i lang="en">Shakespeare and Company</i>, un rincón mítico para los amantes de los
+          libros, justo frente a
           Notre-Dame.</p>
         <p class="itinerario__text">Es pequeña, acogedora y está llena de historia literaria. Aproveché para hacer una
           foto frente a <cite>la Catedral de
-          Notre-Dame</cite>, que, aunque seguía en restauración, sigue siendo uno de los lugares más simbólicos de París. Me
-          senté en los banquitos frente a la catedral mientras un artista callejero tocaba <cite>La vie en rose</cite>al acordeón.
+            Notre-Dame</cite>, que, aunque seguía en restauración, sigue siendo uno de los lugares más simbólicos de
+          París. Me
+          senté en los banquitos frente a la catedral mientras un artista callejero tocaba <cite>La vie en rose</cite>al
+          acordeón.
           Fue un momento mágico.</p>
       </div>
     </section>
@@ -77,10 +83,11 @@
     <section class="itinerario">
       <div class="itinerario__item">
         <h2 class="itinerario__title">Atardecer moderno en el Pompidou</h2>
-          <p class="itinerario__text">Finalmente, terminé el día en el <cite>Centro Pompidou</cite>, un espacio dedicado al arte
-            moderno y contemporáneo. Su
-            fachada colorida y su ambiente vanguardista contrastan perfectamente con el resto de la ciudad. Desde su
-            terraza, se puede ver una de las mejores panorámicas del atardecer parisino.</p>
+        <p class="itinerario__text">Finalmente, terminé el día en el <cite>Centro Pompidou</cite>, un espacio dedicado
+          al arte
+          moderno y contemporáneo. Su
+          fachada colorida y su ambiente vanguardista contrastan perfectamente con el resto de la ciudad. Desde su
+          terraza, se puede ver una de las mejores panorámicas del atardecer parisino.</p>
       </div>
     </section>
 
@@ -88,13 +95,21 @@
       <div class="itinerario__item">
         <h2 class="itinerario__title">Un dulce final</h2>
         <div class="itinerario__row itinerario__row--two-columns itinerario__row--column">
-          <img src="../src/assets/images/paris6.jpg" alt="macarons montonados unos encima de otros de color rosa en una vitrina" class="itinerario__image block">
-        <p class="itinerario__text">P.D.: ¡No os vayáis sin probar los macarons! Son el dulce perfecto para acompañar un
-          paseo parisino: crujientes
-          por fuera, suaves por dentro y con mil sabores que te harán volver por más.</p>
+          <picture>
+            <source media="(max-width: 480px)" srcset="../src/assets/images/optimized/paris6-mobile-400.webp">
+            <source media="(max-width: 1023px)" srcset="../src/assets/images/optimized/paris6-tablet-800.webp">
+            <img src="../src/assets/images/optimized/paris6-desktop-1200.webp"
+              alt="macarons montonados unos encima de otros de color rosa en una vitrina"
+              class="itinerario__image block">
+          </picture>
+
+          <p class="itinerario__text">P.D.: ¡No os vayáis sin probar los macarons! Son el dulce perfecto para acompañar
+            un
+            paseo parisino: crujientes
+            por fuera, suaves por dentro y con mil sabores que te harán volver por más.</p>
         </div>
-        <iframe  src="https://www.youtube.com/embed/UT-tcI6hPb0?si=yXNMnC59kS7oznlj"
-          title="YouTube video player" frameborder="0"
+        <iframe src="https://www.youtube.com/embed/UT-tcI6hPb0?si=yXNMnC59kS7oznlj" title="YouTube video player"
+          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
