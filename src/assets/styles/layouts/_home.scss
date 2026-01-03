@@ -4,6 +4,7 @@
 @use "../base/functions" as *;
 @use "../base/mixins" as *;
 
+
 body {
   @include text-style($font-family-primary, $font-weight-regular, $font-style-normal, 1rem, 1.6, $color-dark);
   background-color: #ffe4fe;
