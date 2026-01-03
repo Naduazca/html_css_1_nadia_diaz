@@ -6,6 +6,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Itinerario de un viaje a París - experiencia personal y recomendaciones.">
+  
+  <!-- Preload LCP image -->
+  <link rel="preload" as="image" href="../src/assets/images/optimized/paris7-1200.webp" fetchpriority="high">
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+  <link rel="preconnect" href="https://i.ytimg.com" crossorigin>
+  
   <link rel="stylesheet" type="text/css" href="../src/assets/styles/main.scss">
   <title>Itinerario del primer día en París</title>
   <link rel="icon" href="../src/assets/images/logo.png" type="image/png">
@@ -21,7 +29,7 @@
     </div>
   </header>
   <main>
-    <section class="hero1 flex flex--center" fetchpriority="high">
+    <section class="hero1 flex flex--center">
       <img src="../src/assets/images/optimized/paris7-1200.webp" alt="Día 1: Primeras vistas y grandes iconos"
         width="1200" height="800" fetchpriority="high" class="hero1__image">
       <div class="hero__content--detalle">
@@ -108,7 +116,7 @@
         <iframe src="https://www.youtube.com/embed/nlpMAZQgs-w?si=NyMu5nUAHKmyhzqi" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy" width="560" height="315"></iframe>
       </div>
     </section>
     <nav class="nav">
