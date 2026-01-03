@@ -40,25 +40,41 @@
 .hero {
     position: relative;
     width: 100%;
+    height: 70vh;
     justify-content: end;
     color: #222;
-    background-image: url("../../assets/images/optimized/paris1-1200.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
 }
 
 .hero1 {
     position: relative;
-   // width: 100%;
- height: 70vh;
-  //  width:1200;
+    width: 100%;
+    height: 70vh;
     justify-content: end;
     color: #222;
-    background-image: url("../../assets/images/optimized/paris7-1200.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero1__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
 }
 .hero2 {
     position: relative;
@@ -66,10 +82,18 @@
     height: 70vh;
     justify-content: end;
     color: #222;
-    background-image: url("../../assets/images/optimized/paris10-1200.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero2__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
 }
 .hero3 {
     position: relative;
@@ -77,10 +101,18 @@
     height: 70vh;
     justify-content: end;
     color: #222;
-    background-image: url("../../assets/images/optimized/paris13-1200.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero3__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
 }
 
 .hero::before {
