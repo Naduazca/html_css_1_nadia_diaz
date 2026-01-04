@@ -29,3 +29,8 @@ if (fechaSpan) fechaSpan.textContent = formatted;
       };
     }
   };
+
+  purgecss({
+  content: ['./index.html', './src/**/*.js'],
+  css: ['./styles.css']
+})
